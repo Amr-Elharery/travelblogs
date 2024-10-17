@@ -14,15 +14,10 @@ a{text-decoration: none;}
 
 /* header */
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
     padding: 1rem 9%;
 }
 header .logo{
