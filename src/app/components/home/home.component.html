@@ -1,0 +1,207 @@
+<section class="home section" id="home">
+    <div class="content">
+      <h3>TRAVEL BLOG</h3>
+      <p>Discover New Places With EG, Adventure Awaits</p>
+      <a href="#" class="btn">Discover More</a>
+    </div>
+  
+    <!-- Video control buttons -->
+    <div class="controls">
+      <span *ngFor="let video of videos" 
+            class="video-btn" 
+            [ngClass]="{'blue': video.selected}" 
+            (click)="selectVideo(video)" 
+            [attr.data-src]="video.src">
+      </span>
+    </div>
+  
+    <!-- Video player container -->
+    <div class="video-container">
+      <video [src]="selectedVideoSrc" id="video-slider" loop autoplay muted></video>
+    </div>
+  </section>
+  
+
+<!-- package -->
+<section class="packages section" id="packages">
+
+    <h1 class="heading">
+        <span>E</span>
+        <span>G</span>
+        <span>Y</span>
+        <span>P</span>
+        <span>T</span>
+
+    </h1>
+
+
+    <div class="container " id="2lby"> <!-- for fun :) -->
+        <div class="box">
+            <img src="../../../assets/images/alex.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Alex</h3>
+                <p>A coastal city on the Mediterranean, known for its historic sites like the ancient Library of Alexandria and beautiful beaches.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/aswan.webp" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Aswan</h3>
+                <p>A serene city along the Nile, famous for its temples, the Aswan High Dam, and vibrant Nubian culture.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/cairo.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Cairo</h3>
+                <p> Egypt's capital, is a historic city on the Nile, famous for the Pyramids and Sphinx. It's a vibrant blend of ancient culture and modern life.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/Tanta.avif" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Tanta</h3>
+                <p>A city in the Nile Delta, known for its agricultural significance and the annual Moulid of Sayed Ahmed al-Badawi festival.</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/giza3.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Giza</h3>
+                <p>Home to the iconic Pyramids and the Sphinx, Giza is a major archaeological and tourist destination.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end package -->
+
+<!-- benefits -->
+<section class="benefits section" id="benefits">
+
+    <h1 class="heading">
+        <span>B</span>
+        <span>E</span>
+        <span>N</span>
+        <span>E</span>
+        <span>F</span>
+        <span>I</span>
+        <span>T</span>
+        <span>S</span>
+    </h1>
+
+    <div class="container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Rich History</h3>
+            <p>Egypt is home to some of the world's most iconic ancient landmarks, like the Pyramids, Sphinx, and temples of Luxor</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-ankh"></i>
+            <h3>Tourism</h3>
+            <p>With its historical sites, beautiful beaches, and the Red Sea, Egypt is a top destination for travelers</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Strategic Location</h3>
+            <p>Egypt connects Africa, the Middle East, and Europe, with the Suez Canal playing a crucial role in global trade</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Diverse Economy</h3>
+            <p>Egypt's economy is supported by agriculture, tourism, natural gas, and the growing tech industry</p>
+        </div>
+        <div class="box">
+            <i class="fa-regular fa-money-bill-1"></i>
+            <h3>Affordable Living</h3>
+            <p>Compared to many countries, Egypt offers a relatively low cost of living</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Education Hub</h3>
+            <p>Egypt is home to some of the region’s most prestigious universities and institutions, like Cairo University and the American University in Cairo</p>
+        </div>
+    </div>
+</section>
+<!-- end benefits -->
+
+<!-- gallary -->
+
+<section class="gallary section" id="gallary">
+
+    <h1 class="heading">
+        <span>P</span>
+        <span>L</span>
+        <span>A</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="container">
+        <div class="box">
+            <img src="../../../assets/images/pyramids.jpg" alt="">
+            <div class="content">
+                <h3>Giza Pyramids</h3>
+                <p>The Great Pyramid, Khafre Pyramid, and the Sphinx are the star attractions.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/grand egyptian museum.jpg" alt="">
+            <div class="content">
+                <h3>Grand Egyptian Museum</h3>
+                <p>A massive new museum near the pyramids, displaying thousands of ancient artifacts.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/khan elkhalili.jpg" alt="">
+            <div class="content">
+                <h3>Khan El Khalili</h3>
+                <p> A bustling market in Cairo, perfect for buying traditional crafts, jewelry, and souvenirs</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/siwa.jpg" alt="">
+            <div class="content">
+                <h3>Siwa Oasis</h3>
+                <p> A remote desert oasis known for its natural springs, salt lakes, and ancient ruins</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/pexels-mjlo-20401331.jpg" alt="">
+            <div class="content">
+                <h3>El Gouna</h3>
+                <p>El Gouna is a luxury Red Sea resort famous for its clear waters and sandy beaches. It's perfect for water sports and has a lively nightlife</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/matrouh.jpg" alt="">
+            <div class="content">
+                <h3>Marsa Matrouh</h3>
+                <p>Marsa Matrouh, on the Mediterranean coast, boasts stunning beaches and turquoise waters, offering a relaxed, family-friendly atmosphere</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/maktabah.jpg" alt="">
+            <div class="content">
+                <h3>Bibliotheca Alexandrina</h3>
+                <p>A modern library and cultural center that pays homage to the ancient Library of Alexandria</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/corniche.jpg" alt="">
+            <div class="content">
+                <h3>Alexandria Corniche</h3>
+                <p>A scenic waterfront promenade perfect for strolling, dining, and enjoying views of the sea</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../../../assets/images/philae-temple.jpg" alt="">
+            <div class="content">
+                <h3>Philae Temple</h3>
+                <p>Dedicated to the goddess Isis, this ancient temple complex is situated on Agilkia Island and is known for its stunning architecture and scenic views</p>
+            </div>
+        </div>
+    </div>
+
+</section>
