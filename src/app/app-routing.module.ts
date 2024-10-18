@@ -15,6 +15,22 @@ const routes: Routes = [
         import('./components/dashboard/dashboard.component').then(
           (m) => m.DashboardComponent
         ),
+        children:[
+          {
+            path: '',
+            loadComponent: () =>
+              import('./components/dashboard-content/dashboard-content.component').then(
+                (m) => m.DashboardContentComponent
+              ),
+          },
+          {
+            path: '/profile',
+            loadComponent: () =>
+              import('./components/profile/profile.component').then(
+                (m) => m.ProfileComponent
+              ),
+          }
+        ]
     },
     {
       path: 'blogs',
