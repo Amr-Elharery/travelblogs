@@ -24,7 +24,7 @@ const routes: Routes = [
               ),
           },
           {
-            path: '/profile',
+            path: 'profile',
             loadComponent: () =>
               import('./components/profile/profile.component').then(
                 (m) => m.ProfileComponent
