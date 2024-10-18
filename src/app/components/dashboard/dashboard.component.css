@@ -303,7 +303,7 @@ a{
     justify-content: center;
     color:#AAA;
     transition: .3s;
-    
+
 }
 .toggle-checkbox:checked + .toggle-switch{
     background-color: var(--blue-color);
@@ -648,7 +648,7 @@ ul{
 
 .page{
     background-color: #f1f5f9;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 /* Start Sidebar */
 .sidebar{
@@ -671,7 +671,7 @@ ul{
 .sidebar > h3::before{
     width: 80px;
     height: 2px;
-    bottom: -20px;    
+    bottom: -20px;
 }
 .sidebar > h3::after{
     border: 4px solid #fff;
@@ -864,7 +864,7 @@ ul{
 }
 .yearly-target .row:nth-of-type(2) .icon{
     background-color: #f59e0b57;
-    
+
 }
 .yearly-target .row:nth-of-type(3) .icon{
     background-color: #22c55e4a;
